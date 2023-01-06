@@ -1,231 +1,337 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Liketrex Technology</title>
-    <meta name="keywords" content="website-design-development, website development, website design, corporate, services, creative agency, e-commerce , saas, product landing, software, web studio, creative">
-    <meta name="author" content="Liketrex Technology">
-
-    <meta property="og:site_name" content="liketrex.com" />
-    <meta property="og:title" content="Liketrex Technology"/>
-    <meta property="og:url" content="https://liketrex.com"/>
-    <meta property="og:image" content="https://liketrex.com/assets/img/liketrex-logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="768" />
-    <meta property="og:image:height" content="416" />
-    <link rel="icon" type="image/png" href="https://liketrex.com/img/logo.png" />
-    <link rel="apple-touch-icon" href="https://liketrex.com/img/apple-touch-icon.png" />
-    <link rel="stylesheet" type="text/css" media="screen" href="https://liketrex.com/css/styles.css" />    
-
-    <!-- Favicon and Touch Icons-->
-    <link rel="icon" type="image/png" href="https://liketrex.com/assets/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="https://liketrex.com/assets/favicon/favicon.png">
-    <link rel="manifest" href="https://liketrex.com/assets/favicon/site.webmanifest">
-    <link rel="mask-icon" color="#6366f1" href="https://liketrex.com/assets/favicon/safari-pinned-tab.svg">
-    <meta name="msapplication-TileColor" content="#080032">
-    <meta name="msapplication-config" content="https://liketrex.com/assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="white">
-
-  
-    <!-- Import Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" id="google-font">
-
-    <!-- Main Theme Styles + Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="https://liketrex.com/assets/css/theme.min.css">
-    <!-- Customizer generated styles-->
-    <style id="customizer-styles">
-
-    :root
-    {
-      --ar-primary:#a100ff;
-      --ar-primary-rgb:161,0,255;
-      --ar-link-color:#a100ff;
-      --ar-link-hover-color:#8800e6;
-      --ar-warning:#edcb50;
-      --ar-warning-rgb:#edcb50;
-      --ar-warning-rgb:237,203,80;
-      --ar-info:#3f7fca;
-      --ar-info-rgb:#3f7fca;
-      --ar-info-rgb:63,127,202;
-      --ar-success:#3fca90;
-      --ar-success-rgb:#3fca90;
-      --ar-success-rgb:63,202,144;
-      --ar-danger:#ed5050;
-      --ar-danger-rgb:#ed5050;
-      --ar-danger-rgb:237,80,80;
-      --ar-body-font-family:'Inter',sans-serif;
-      --ar-root-font-size:1rem;
-      --ar-border-width:1px;
-      --ar-border-radius:1rem;
-      --ar-border-radius-sm:calc(var(--ar-border-radius)*.75);--ar-link-color:#a100ff;
-      --ar-link-hover-color:#8800e6;
-    }  
-    .btn-primary
-    {
-      --ar-btn-bg:#a100ff;
-      --ar-btn-border-color:#a100ff;
-      --ar-btn-hover-bg:#8800e6;
-      --ar-btn-hover-border-color:#8800e6;
-      --ar-btn-active-bg:#8800e6;
-      --ar-btn-active-border-color:#8800e6;
-      --ar-btn-disabled-bg:#a100ff;
-      --ar-btn-disabled-border-color:#a100ff;
-    }
-
-    .btn-warning
-    {
-      --ar-btn-bg:#edcb50;
-      --ar-btn-border-color:#edcb50;
-      --ar-btn-hover-bg:#d4b237;
-      --ar-btn-hover-border-color:#d4b237;
-      --ar-btn-active-bg:#d4b237;
-      --ar-btn-active-border-color:#d4b237;
-      --ar-btn-disabled-bg:#edcb50;
-      --ar-btn-disabled-border-color:#edcb50;
-    }
-    .btn-info
-    {
-      --ar-btn-bg:#3f7fca;
-      --ar-btn-border-color:#3f7fca;
-      --ar-btn-hover-bg:#2666b1;
-      --ar-btn-hover-border-color:#2666b1;
-      --ar-btn-active-bg:#2666b1;
-      --ar-btn-active-border-color:#2666b1;
-      --ar-btn-disabled-bg:#3f7fca;
-      --ar-btn-disabled-border-color:#3f7fca;
-    }
-    .btn-success
-    {
-      --ar-btn-bg:#3fca90;
-      --ar-btn-border-color:#3fca90;
-      --ar-btn-hover-bg:#26b177;
-      --ar-btn-hover-border-color:#26b177;
-      --ar-btn-active-bg:#26b177;
-      --ar-btn-active-border-color:#26b177;
-      --ar-btn-disabled-bg:#3fca90;
-      --ar-btn-disabled-border-color:#3fca90;
-    }
-
-
-    .btn-danger
-    {
-      --ar-btn-bg:#ed5050;
-      --ar-btn-border-color:#ed5050;
-      --ar-btn-hover-bg:#d43737;
-      --ar-btn-hover-border-color:#d43737;
-      --ar-btn-active-bg:#d43737;
-      --ar-btn-active-border-color:#d43737;
-      --ar-btn-disabled-bg:#ed5050;
-      --ar-btn-disabled-border-color:#ed5050;
-    }
-    .btn-outline-primary
-    {
-      --ar-btn-color:#a100ff;
-      --ar-btn-border-color:#a100ff;
-      --ar-btn-hover-bg:#a100ff;
-      --ar-btn-hover-border-color:#a100ff;
-      --ar-btn-active-bg:#a100ff;
-      --ar-btn-active-border-color:#a100ff;
-      --ar-btn-disabled-color:#a100ff;
-      --ar-btn-disabled-border-color:#a100ff;
-    }
-    .btn-outline-warning
-    {
-      --ar-btn-color:#edcb50;
-      --ar-btn-border-color:#edcb50;
-      --ar-btn-hover-bg:#edcb50;
-      --ar-btn-hover-border-color:#edcb50;
-      --ar-btn-active-bg:#edcb50;
-      --ar-btn-active-border-color:#edcb50;
-      --ar-btn-disabled-color:#edcb50;
-      --ar-btn-disabled-border-color:#edcb50;
-    }
-    .btn-outline-info
-    {
-      --ar-btn-color:#3f7fca;
-      --ar-btn-border-color:#3f7fca;
-      --ar-btn-hover-bg:#3f7fca;
-      --ar-btn-hover-border-color:#3f7fca;
-      --ar-btn-active-bg:#3f7fca;
-      --ar-btn-active-border-color:#3f7fca;
-      --ar-btn-disabled-color:#3f7fca;
-      --ar-btn-disabled-border-color:#3f7fca;
-    }
-    .btn-outline-success
-    {
-      --ar-btn-color:#3fca90;
-      --ar-btn-border-color:#3fca90;
-      --ar-btn-hover-bg:#3fca90;
-      --ar-btn-hover-border-color:#3fca90;
-      --ar-btn-active-bg:#3fca90;
-      --ar-btn-active-border-color:#3fca90;
-      --ar-btn-disabled-color:#3fca90;
-      --ar-btn-disabled-border-color:#3fca90;
-    }
-
-    .btn-outline-danger
-    {
-      --ar-btn-color:#ed5050;
-      --ar-btn-border-color:#ed5050;
-      --ar-btn-hover-bg:#ed5050;
-      --ar-btn-hover-border-color:#ed5050;
-      --ar-btn-active-bg:#ed5050;
-      --ar-btn-active-border-color:#ed5050;
-      --ar-btn-disabled-color:#ed5050;
-      --ar-btn-disabled-border-color:#ed5050;
-    }
-    </style>
-
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    <link rel="stylesheet" href="assets/css/libs.bundle.css" />
+    <link rel="stylesheet" href="assets/css/theme.bundle.css" />
+    <title>MAGO International Exim</title>
   </head>
-  <!-- Body-->
   <body>
 
-    <!-- Page wrapper-->
-    <main class="page-wrapper">
-      <header class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand pe-sm-3" href="index.html">
-              <span class="text-primary flex-shrink-0 me-2">X</span>
-              Liketrex Technology
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index-2.html">
+          <!-- <img src="assets/img/brand.svg" class="navbar-brand-img" alt="..."> -->
+          <h2 class="text-primary fw-bolder">MAGO Int.Exim</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Bamboo Products
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Food Products
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="/about.html" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+            </li>
+          </ul>
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="#" target="_blank">
+            Contact now
           </a>
         </div>
-      </header>   
-      
-      <!-- Page content-->
-
-      <div class="container py5 mt5" style="margin-top: 200px;">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRNbE9apetJg0AbYhZcKrbW%2FMAGO-International-Exim-(1.1.0)%3Fnode-id%3D3455%253A1838%26t%3D2bCQvGOQ6f0reX3l-1" allowfullscreen>
-        </iframe>
       </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section class="pt-4 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 order-md-2">
+            <img src="assets/img/eco-friendly.jpg" class="img-fluid mb-6 mb-md-0" alt="...">
+          </div>
+          <div class="col-12 col-md-7 order-md-1">
+            <h1 class="display-4">
+              Order quality bamboo products. <br>
+              <span class="text-primary">Imagine entirely new ones.</span>
+            </h1>
+            <p class="lead text-muted mb-0">
+              Explore our range of edibles and best designed Bamboo products.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- LANDING PAGES -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-1">
+              Bamboo Products
+            </h2>
+            <p class="fs-lg text-muted mb-6 mb-md-8">
+              From rich starting points to simple single pagers, anything is possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card shadow-light-lg lift lift-lg">
+              <img src="assets/img/all-bamboo-products.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 48" fill="none"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>                
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="mb-0 me-auto">All</h5>
+                <h6 class="text-uppercase me-2 mb-0">Bamboo Product</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card shadow-light-lg lift lift-lg">
+              <img src="assets/img/toothbrush-1.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 48" fill="none"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>                
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="mb-0 me-auto">Toothbrush</h5>
+                <h6 class="text-uppercase me-2 mb-0">Bamboo Product</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card shadow-light-lg lift lift-lg">
+              <img src="assets/img/toothbrush-2.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 48" fill="none"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>                
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="mb-0 me-auto">Toothbrush</h5>
+                <h6 class="text-uppercase me-2 mb-0">Bamboo Product</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card shadow-light-lg lift lift-lg">
+              <img src="assets/img/straw.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 48" fill="none"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>                
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="mb-0 me-auto">Strows</h5>
+                <h6 class="text-uppercase me-2 mb-0">Bamboo Product</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Food Products -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-1">
+              Food Products
+            </h2>
+            <p class="fs-lg text-muted mb-6 mb-md-8">
+              Our range of edibles that make their way beyond borders because of their acceptability amidst the connoisseurs of wholesome eats.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card shadow-light-lg lift lift-lg">
+              <img src="assets/img/food-1.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 48" fill="none"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>                
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="mb-0 me-auto">Namkin</h5>
+                <h6 class="text-uppercase me-2 mb-0">Packaged Food Product</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card shadow-light-lg lift lift-lg">
+              <img src="assets/img/food-2.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 48" fill="none"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>                
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="mb-0 me-auto">Shev / Chiwda</h5>
+                <h6 class="text-uppercase me-2 mb-0">Packaged Food Product</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <!-- COMING SOON -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 text-center">
+            <h3>
+              ...and more soon.
+            </h3>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
 
+    <!-- CURVE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
 
-
-    </main>
-
-    <!-- Footer-->
-    <footer class="footer bg-dark position-relative py-4 py-md-5">
-      <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .02);"></div>
-        <p class="fs-sm pt-3 pb-2 pb-lg-0 mb-0">
-            <span class="opacity-70">&copy; 2022 All rights reserved. ©️ </span>
-            <a class="nav-link d-inline fw-normal p-0" href="https://liketrex.com/" target="_blank" rel="noopener">
-                Liketrex Technology
-            </a>
-        </p>
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- <img src="assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2"> -->
+            <h2 class="text-primary fw-bolder">MAGO Int.Exim</h2>
+            <p class="text-gray-700 mb-2">
+              Something beyond trading.
+            </p>
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Products
+            </h6>
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="/bamboo-products.html" class="text-reset">
+                  Bamboo Products
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/food-products.html" class="text-reset">
+                  Packaged Food Products
+                </a>
+              </li>
+              <h6 class="fw-bold text-uppercase text-gray-700">
+                Official Partner
+              </h6>
+              
+                <li class="mb-3">
+                  <a href="/about.html" class="text-reset">
+                    Gore Bandhu
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="/about.html" class="text-reset">
+                    Amba Bhadang
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="/about.html" class="text-reset">
+                    Bamboo India
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="/about.html" class="text-reset">
+                  About
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/help-center.html" class="text-reset">
+                  FAQ’s
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/contact.html" class="text-reset">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-4">
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Address
+            </h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  B603, RAGA HOMES, Chikhali, Pune, Maharashtra, India, Pin Code - 411062
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Email : magointexim@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://liketrex.com/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Main theme script-->
-    <script src="https://liketrex.com/assets/js/theme.min.js"></script>
+    <script src='../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script src="assets/js/vendor.bundle.js"></script>
+    <script src="assets/js/theme.bundle.js"></script>
   </body>
 </html>
