@@ -36,7 +36,7 @@
               <a class="nav-link" href="/food-products.html">Food Products</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="/about.html">About us</a>
             </li>
           </ul>
           <a class="navbar-btn btn btn-primary lift ms-auto" href="/contact.html">Contact now</a>
@@ -65,71 +65,60 @@
             <hr class="hr-sm my-6 my-md-8 mx-auto bg-gray-300">
 
             <!-- Form -->
-            <form>
+            <form class="gform card-body p-4" method="POST" action="https://script.google.com/macros/s/AKfycbyGGmvl3G8liiZPqDhZvZnkz1n-yhJxFC15iRe6pPaR9katpwFhcNC54H9EK9CS1Hl4/exec">
               <div class="form-group mb-">
-                <label class="form-label" for="contactName">Full name</label>
-                <input class="form-control" id="contactName" type="text" placeholder="Full name">
+                <label class="form-label" for="contactName">Full name *</label>
+                <input class="form-control" id="contactName" name="Name" type="text" placeholder="Full name" required>
               </div>
               <div class="form-group mb-5">
-                <label class="form-label" for="contactEmail">Email</label>
-                <input class="form-control" id="contactEmail" type="email" placeholder="hello@domain.com">
+                <label class="form-label" for="contactEmail">Email *</label>
+                <input class="form-control" id="contactEmail" name="Email" type="email" placeholder="hello@domain.com" required>
               </div>
               <div class="form-group mb-5">
-                <label class="form-label" for="contactEmail">Contact No.</label>
-                <input class="form-control" id="contactEmail" type="number" placeholder="Contact No.">
+                <label class="form-label" for="contactEmail">Contact No. *</label>
+                <input class="form-control" id="contactEmail" name="Contact" type="number" placeholder="Contact No." required>
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Which products you are interested in</label>
-                <input class="form-control" id="" type="number" placeholder="">
+                <input class="form-control" id="" type="text" name="Products_Interested" placeholder="">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Establishment Year</label>
-                <input class="form-control" id="" type="number" placeholder="Establishment Year">
+                <input class="form-control" id="" type="number" name="Establishment_Year" placeholder="Establishment Year">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Number of shipments Import Last 1 Calender Year</label>
-                <input class="form-control" id="" type="number" placeholder="Number of shipments Import Last 1 Year">
+                <input class="form-control" id="" type="number" name="Number_of_shipments_Import" placeholder="Number of shipments Import Last 1 Year">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Preferred Incoterm</label>
-                <input class="form-control" id="" type="text" placeholder="Your Preferred Incoterm">
+                <input class="form-control" id="" type="text" name="Preferred_Incoterm" placeholder="Your Preferred Incoterm">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Company Type</label>
-                <select class="form-control">
-                  <option class="form-control">Select</option>
-                  <option>Wholeseler</option>
-                  <option>Distributer</option>
-                  <option>Supermarket</option>
-                </select>
+                <input class="form-control" id="" type="text" name="Company_Type" placeholder="Wholeseler | Distributer | Supermarket">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Existing Products</label>
-                <input class="form-control" id="" type="text" placeholder="Any">
+                <input class="form-control" id="" name="Existing_Products"  type="text" placeholder="Any">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Do you have Distribution Network to deliver goods to end user</label>
-                <select class="form-control">
-                  <option>Select</option>
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
+                <input class="form-control" name="Distribution_Network"  type="text" placeholder="Yes/No">
               </div>
               <div class="form-group mb-5">
                 <label class="form-label" for="">Are you interested to import/source any other product from India  which is not mentioned on our website ?</label>
-                <select class="form-control">
-                  <option>Select</option>
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
-                <input class="form-control" id="" type="text" placeholder="specify those products/ product">
+                <input class="form-control" id="" type="text" name="Interested_to_Import" placeholder="specify those products/ product">
               </div> 
               <div class="form-group mb-5">
                 <label for="contactMessage">What can we help you with?</label>
-                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what we can help you with!"></textarea>
+                <textarea class="form-control" id="contactMessage" name="Message" rows="5" placeholder="Tell us what we can help you with!"></textarea>
               </div>
               <div class="form-group mb-0">
-                <a href="#!" class="btn w-100 btn-primary lift">Send message</a>
+                <button class="btn btn-lg w-100 btn-success lift">Send</button>
+                <div class="thankyou_message" style="display:none;">
+                  <h2><strong>Thanks</strong> for contacting us! We will get back to you soon!</h2>
+                </div>
               </div>
             </form>
 
@@ -180,7 +169,7 @@
                 </a>
               </li>
               <h6 class="fw-bold text-uppercase text-gray-700">
-                Official Partner
+                Official Partners
               </h6>
               
                 <li class="mb-3">
@@ -201,8 +190,13 @@
             </h6>
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
+                <a href="/index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
                 <a href="/about.html" class="text-reset">
-                  About
+                  About us
                 </a>
               </li>
               <li class="mb-3">
@@ -230,12 +224,12 @@
               <li class="mb-3">
                 <span class="text-reset">
                   <i class="bi bi-envelope-at"></i>
-                  <a href="mailto:contact@magoint.com">contact@magoint.com</a>
+                  <a href="mailto:contact@magoint.com">info@magoint.com</a>
                 </span>
               </li>
               <li class="mb-3">
                 <span class="text-reset">
-                  <i class="bi bi-whatsapp"></i>
+                  <i class="bi bi-whatsapp" style="color: #25d366;"></i>
                   <a href="tel:+919665863311">+91 9665863311</a> | <a href="tel:+919665863311">+91 9730667744</a>
                 </span>
               </li>
@@ -244,6 +238,21 @@
         </div>
       </div>
     </footer>
+
+    <footer class="copyright py-4">
+      <div class="container text-center">
+        <h2 class="logo"><a href="index.html">MAGO International EXIM</a></h2>
+        <div class="middle copyright">
+          <p>© Copyright 2023 MAGO International EXIM. All Rights Reserved</p>
+          <p>Design & Developed by<a href="https://liketrex.com/" target="_blank"> Liketrex Technology </a></p>
+        </div>
+      </div>
+      <style scoped>
+        .copyright h2{margin: 0;line-height: normal;}.copyright a{font-weight: bold;text-decoration: none;}.copyright p{margin: 0;text-decoration: none;}.copyright{background-color: #212529;margin: 0;color: #777;letter-spacing: .5px;}
+      </style>
+    </footer>  
+
+    <script data-cfasync="false" type="text/javascript" src="form-handle.js"></script>
     <script src='../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
     <script src="assets/js/vendor.bundle.js"></script>
     <script src="assets/js/theme.bundle.js"></script>
